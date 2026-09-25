@@ -15,6 +15,9 @@ public class Policy {
         
         // Step 2: Added toString method for Policy
         
+        // Step 3; Static field to tracj number of Policy objects created 
+        private static int PolicyCount = 0;
+        
         // Security consideration: create a deep copy of PolicyHolder to prevent security holes / aliasing
         this.policyHolder = new PolicyHolder(policyHolder);
         
