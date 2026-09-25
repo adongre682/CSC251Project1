@@ -12,6 +12,9 @@ public class Policy {
     public Policy(String policyNumber, String providerName, PolicyHolder policyHolder) {
         this.policyNumber = policyNumber;
         this.providerName = providerName;
+        
+        // Step 2: Added toString method for Policy
+        
         // Security consideration: create a deep copy of PolicyHolder to prevent security holes / aliasing
         this.policyHolder = new PolicyHolder(policyHolder);
         
